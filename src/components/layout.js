@@ -1,36 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { useSpring, animated } from 'react-spring';
-import { Normalize } from 'styled-normalize'
+import { Normalize } from 'styled-normalize';
 
 const theme = {
-  lightBlack: '#2d2d2d',
-  gold: '#e2bd80',
+  darkBlack: '#1B1B1B',
+  lightBlack: '#3C3C3C',
+  primary: '#29D396',
 };
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu|Vollkorn&display=swap');
 
   body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Vollkorn', serif;
+    font-size: 16px;
     margin: 0;
-    background-color: ${theme.lightBlack};
+    color: ${theme.lightBlack};
     font-size: 1rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
   }
 `;
 
 const Main = styled(animated.main)`
   max-width: 38rem;
-  padding: 2rem;
+  padding: 32px 48px;
   margin: auto;
-  text-align: center;
-  color: ${theme.gold};
+  font-size: 24px;
 `;
 
 const Layout = ({ children }) => {
@@ -43,7 +39,9 @@ const Layout = ({ children }) => {
     <>
       <Normalize />
       <GlobalStyle />
-      <Main style={animation}>{children}</Main>
+      <ThemeProvider theme={theme}>
+        <Main style={animation}>{children}</Main>
+      </ThemeProvider>
     </>
   );
 };

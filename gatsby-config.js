@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Bagaimana, bolsos únicos hechos a mano`,
-    description: `Bagaimana es una marca registrada que ofrece artículos de moda responsable, contando con una gama de productos artesanales, hechos a mano por pequeños productores locales que usan técnicas ancestrales para desarrollar modelos únicos.`,
-    author: `@bagaimana.bcn`,
+    title: `Pol Milian | Full-Stack Web Engineer`,
+    description: `Hi! I'm Pol, a `,
+    author: `@E_L_Pol`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,9 +14,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-react-svg`,
       options: {
-        trackingId: 'UA-140742790-1',
+        rule: {
+          include: /svg/,
+        },
       },
     },
     `gatsby-transformer-sharp`,
@@ -25,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bagaimana`,
-        short_name: `Bagaimana`,
+        name: `Pol Milian`,
+        short_name: `Pol Milian`,
         start_url: `/`,
         background_color: `#2d2d2d`,
         theme_color: `#2d2d2d`,
