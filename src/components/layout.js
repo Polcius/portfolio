@@ -63,7 +63,6 @@ const Layout = ({ children }) => {
     to: { opacity: 1 },
     config: { duration: 3000 },
   });
-  console.log(BgImage)
   return (
     <>
       <GlobalStyle />
