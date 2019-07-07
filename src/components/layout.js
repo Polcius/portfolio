@@ -51,10 +51,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Main = styled(animated.main)`
-  max-width: 38rem;
   padding: 32px 48px;
   margin: auto;
-  font-size: 24px;
+  ${width}
 `;
 
 const Layout = ({ children }) => {
@@ -67,7 +66,9 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Main style={animation}>{children}</Main>
+        <Main width={[1, 0.9, 0.7]} style={animation}>
+          {children}
+        </Main>
       </ThemeProvider>
     </>
   );
