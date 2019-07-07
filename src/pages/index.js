@@ -7,7 +7,7 @@ import BodyText from '../components/BodyText';
 
 const IndexPage = () => (
   <Layout>
-    <SEO />
+    <SEO title="Pol Milian | Full-Stack Web/UI Engineer" />
     <Intro />
     <BodyText />
   </Layout>
