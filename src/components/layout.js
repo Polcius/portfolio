@@ -10,6 +10,7 @@ import {
   fontWeight,
   lineHeight,
 } from 'styled-system';
+import BgImage from '../images/cream_pixels.png';
 
 // TODO: https://www.getwelly.com/ animacions text, underline https://www.nadiaux.design/
 
@@ -46,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     margin: 0;
     color: ${theme.lightBlack};
-    font-size: 1rem;
+    background: url(${BgImage});
   }
 `;
 
@@ -62,6 +63,7 @@ const Layout = ({ children }) => {
     to: { opacity: 1 },
     config: { duration: 3000 },
   });
+  console.log(BgImage)
   return (
     <>
       <GlobalStyle />
