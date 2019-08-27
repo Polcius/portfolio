@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Pol Milian | Full-Stack Web Engineer`,
-    description: `Hi! I'm Pol, a Full-Stack Web/UI Engineer from Barcelona. Nice to meet you!`,
+    title: `Pol Milian | Full-Stack Engineer`,
+    description: `Hi! I'm Pol, a Full-Stack Engineer from Barcelona. Nice to meet you!`,
     author: `@E_L_Pol`,
   },
   plugins: [

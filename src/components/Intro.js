@@ -23,7 +23,7 @@ const IntroWrapper = styled.section`
 const Intro = () => (
   <IntroWrapper color="darkBlack" fontSize={[2, 3, 4]}>
     <p>
-      👋Hi! I’m <span>Pol.</span> A Full-Stack Web/UI Engineer from Barcelona.{' '}
+      👋Hi! I’m <span>Pol.</span> A Full-Stack Engineer from Barcelona.{' '}
       <span>Nice to meet you!</span>
     </p>
   </IntroWrapper>

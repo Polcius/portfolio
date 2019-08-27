@@ -12,7 +12,7 @@ import {
 } from 'styled-system';
 import BgImage from '../images/cream_pixels.png';
 
-// TODO: https://www.getwelly.com/ animacions text, underline https://www.nadiaux.design/
+// TODO: https://www.getwelly.com/ animacions text, underline https://www.nadiaux.design/, https://dgattoni.github.io/
 
 const theme = {
   fontSizes: [16, 24, 36, 48, 64, 96, 128],

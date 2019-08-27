@@ -57,24 +57,9 @@ const BodyText = () => (
       freelance and full-time work opportunities.
     </p>
     <p>
-      My experience is mostly with <a href="https://reactjs.org/">React</a>⚛️,
-      especially with technologies like{' '}
-      <a href="https://www.gatsbyjs.org/" rel="noopener noreferrer">
-        Gatsby
-      </a>
-      ,{' '}
-      <a href="https://nextjs.org/" rel="noopener noreferrer">
-        NextJS
-      </a>
-      ,{' '}
-      <a href="https://graphql.org/" rel="noopener noreferrer">
-        GraphQL
-      </a>{' '}
-      and{' '}
-      <a href="https://www.apollographql.com/" rel="noopener noreferrer">
-        Apollo
-      </a>{' '}
-      (among others).
+      I have experience working with <a href="https://reactjs.org/">React</a>⚛️
+      and <a href="https://vuejs.org/">VueJS</a> on the frontend, and NodeJS &
+      GraphQL on the backend.
     </p>
     <p>
       Feel free to check out my work and contact me on your social network of
