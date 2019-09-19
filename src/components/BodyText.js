@@ -20,6 +20,22 @@ const BodyTextWrapper = styled.section`
     text-align: center;
     ${space}
   }
+  p {
+    a {
+      border-top: 2px solid rgba(63, 21, 21, 0);
+      border-bottom: 4px solid ${props => props.theme.colors.primary};
+      transition: all 200ms ease;
+      text-decoration: none;
+      &:hover {
+        border-top: 2px solid ${props => props.theme.colors.primary};
+        border-bottom-width: 4px;
+        background-color: ${props => props.theme.colors.primary};
+      }
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
 `;
 
 const ContactButton = styled.a`
@@ -53,13 +69,15 @@ const ContactWrapper = styled.div(space);
 const BodyText = () => (
   <BodyTextWrapper fontSize={[1]}>
     <p>
-      I recently moved to Melbourne, Australia. I am open to interesting
-      freelance and full-time work opportunities.
+      I recently moved to beautiful Melbourne, in Australia. I am open to
+      interesting freelance and full-time work opportunities in the area or
+      remote-based.
     </p>
     <p>
       I have experience working with <a href="https://reactjs.org/">React</a>⚛️
-      and <a href="https://vuejs.org/">VueJS</a> on the frontend, and NodeJS &
-      GraphQL on the backend.
+      and <a href="https://vuejs.org/">VueJS</a> on the frontend, and{' '}
+      <a href="https://nodejs.org/en/about/">NodeJS</a> &{' '}
+      <a href="https://graphql.org/">GraphQL</a> on the backend.
     </p>
     <p>
       Feel free to check out my work and contact me on your social network of
@@ -67,7 +85,7 @@ const BodyText = () => (
     </p>
     <SocialIcons />
     <ContactWrapper mt={[5, 6]}>
-      <p>Not into social networks? Then, just contact me:</p>
+      <p>Not into social networks? Then, just shoot me an e-mail:</p>
       <ContactButton href="mailto:pol.milian.dev@gmail.com">
         Get in touch
       </ContactButton>
