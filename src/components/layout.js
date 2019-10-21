@@ -8,7 +8,7 @@ import BgImage from '../images/cream_pixels.png';
 
 const Layout = ({ children }) => (
   <>
-    <main className="container">{children}</main>
+    <main className="container font-body">{children}</main>
   </>
 );
 
