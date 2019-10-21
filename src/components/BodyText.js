@@ -1,73 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring';
-import {
-  space,
-  color,
-  fontSize,
-  width,
-  fontWeight,
-  lineHeight,
-} from 'styled-system';
 import SocialIcons, { EmailIcon } from './SocialIcons';
 
-const BodyTextWrapper = styled.section`
-  ${fontSize}
-  .email {
-    text-align: center;
-  }
-  div {
-    text-align: center;
-    ${space}
-  }
-  p {
-    a {
-      border-top: 2px solid rgba(63, 21, 21, 0);
-      border-bottom: 4px solid ${props => props.theme.colors.primary};
-      transition: all 200ms ease;
-      text-decoration: none;
-      &:hover {
-        border-top: 2px solid ${props => props.theme.colors.primary};
-        border-bottom-width: 4px;
-        background-color: ${props => props.theme.colors.primary};
-      }
-      &:visited {
-        color: inherit;
-      }
-    }
-  }
-`;
-
-const ContactButton = styled.a`
-  align-items: center;
-  margin: auto;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: ${props => props.theme.colors.primary};
-  color: white;
-  cursor: pointer;
-  display: inline-flex;
-  flex-shrink: 0;
-  line-height: 1.25;
-  white-space: nowrap;
-  background-size: 2rem 2rem;
-  border-radius: 4px;
-  border-width: 4px;
-  border-style: solid;
-  border-color: ${props => props.theme.colors.primary};
-  box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
-  text-decoration: none;
-  padding: 0.75rem 1rem;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  &:hover {
-    background-color: white;
-    color: ${props => props.theme.colors.primary};
-  }
-`;
-
-const ContactWrapper = styled.div(space);
-
 const BodyText = () => (
-  <BodyTextWrapper fontSize={[1]}>
+  <section>
     <p>
       I recently moved to beautiful Melbourne, in Australia. I am open to
       interesting freelance and full-time work opportunities in the area or
@@ -84,13 +20,11 @@ const BodyText = () => (
       choice:
     </p>
     <SocialIcons />
-    <ContactWrapper mt={[5, 6]}>
+    <article>
       <p>Not into social networks? Then, just shoot me an e-mail:</p>
-      <ContactButton href="mailto:pol.milian.dev@gmail.com">
-        Get in touch
-      </ContactButton>
-    </ContactWrapper>
-  </BodyTextWrapper>
+      <a href="mailto:pol.milian.dev@gmail.com">Get in touch</a>
+    </article>
+  </section>
 );
 
 export default BodyText;
