@@ -1,12 +1,11 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
 
 const Intro = () => (
-  <section className="font-display">
-    <p>
-      👋Hi! I’m <span>Pol.</span> A Full-Stack Engineer from Barcelona.{' '}
-      <span>Nice to meet you!</span>
-    </p>
+  <section className="font-display mb-12">
+    <h1 className="text-6xl leading-tight">
+      👋Hi! I’m <span className="text-lime">Pol.</span> A Full-Stack Engineer
+      from Barcelona. <span className="text-lime">Nice to meet you!</span>
+    </h1>
   </section>
 );
 

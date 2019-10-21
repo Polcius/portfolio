@@ -3,16 +3,9 @@ import React from 'react';
 import TwitterIcon from '../images/svg/twitter-icon.svg';
 import GitHubIcon from '../images/svg/github-icon.svg';
 import LinkedInIcon from '../images/svg/linkedin-icon.svg';
-import EmailIconPNG from '../images/mail-icon.png';
-
-export const EmailIcon = () => (
-  <div>
-    <img src={EmailIconPNG} alt="Email icon" />
-  </div>
-);
 
 const SocialIcons = () => (
-  <section className="text-center mt-8">
+  <section className="flex flex-col items-center md:flex-row justify-center text-center mt-8 mb-16">
     <a href="https://twitter.com/E_L_Pol" rel="noopener noreferrer">
       <TwitterIcon className="px-2" width="96px" height="96px" />
     </a>

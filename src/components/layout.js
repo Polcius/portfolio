@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useSpring, animated } from 'react-spring';
 import '../styles/global.css';
-import BgImage from '../images/cream_pixels.png';
 
 // TODO: https://www.getwelly.com/ animacions text, underline https://www.nadiaux.design/, https://dgattoni.github.io/
 
 const Layout = ({ children }) => (
-  <>
-    <main className="container font-body">{children}</main>
-  </>
+  <div>
+    <main className="container font-body p-12 lg:p-24">{children}</main>
+  </div>
 );
 
 Layout.propTypes = {

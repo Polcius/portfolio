@@ -8,7 +8,11 @@ module.exports = {
       center: true,
       padding: '2rem',
     },
-    extend: {},
+    extend: {
+      colors: {
+        lime: 'rgb(41, 211, 150)',
+      },
+    },
   },
   variants: {},
   plugins: [],
