@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Pol Milian | Full-Stack Engineer`,
-    description: `Hi! I'm Pol, a Full-Stack Engineer from Barcelona. Nice to meet you!`,
+    title: `Pol Milian | Senior Front-End Engineer`,
+    description: `Hi! I'm Pol, a Senior Front-End Engineer from Barcelona. I specialize in modern JavaScript (ES6+) frameworks such as React and VueJS to make fast, good and beautiful websites and web-apps.`,
     author: `@E_L_Pol`,
   },
   plugins: [
@@ -26,17 +26,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Pol Milian`,
+        name: `Pol Milian - Senior Font-End Engineer`,
         short_name: `Pol Milian`,
         start_url: `/`,
-        background_color: `#2d2d2d`,
-        theme_color: `#2d2d2d`,
+        background_color: `rgb(41, 211, 150);`,
+        theme_color: `rgb(41, 211, 150);`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify`,
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 };
