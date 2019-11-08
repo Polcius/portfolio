@@ -117,7 +117,7 @@ const BodyText = () => {
         <p>Thanks for visiting! Feel free to download a PDF of my CV:</p>
         <a
           className="button font-display my-4"
-          href="https://polmilian.s3.amazonaws.com/Pol_Milian_Resume_October.pdf"
+          href="https://polmilian.s3.amazonaws.com/Pol_Milian_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
