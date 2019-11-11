@@ -9,17 +9,15 @@ const BodyText = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // console.log(entry);
-
+        TweenMax.set('.test', {
+          opacity: 0,
+        });
+        TweenMax.set('#top', {
+          y: -100,
+        });
         if (entry.isIntersecting) {
           const tl = new TimelineLite();
 
-          TweenMax.set('.test', {
-            opacity: 0,
-          });
-          TweenMax.set('#top', {
-            y: -100,
-          });
           tl.staggerTo(
             '.test',
             1,
