@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Draggable from 'gsap/Draggable';
+import { TweenMax, Sine, TimelineLite } from 'gsap/TweenMax';
 
 const Intro = () => {
   useEffect(() => {
@@ -10,6 +11,18 @@ const Intro = () => {
       autoScroll: true,
       inertia: true,
     });
+    const tl = new TimelineLite();
+    tl.to(
+      '.draggable-hand',
+      0.2,
+      {
+        rotation: 35,
+        yoyo: true,
+        repeat: 10,
+        ease: Sine.easeOut,
+      },
+      1
+    );
   });
 
   return (
