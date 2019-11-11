@@ -36,7 +36,6 @@ const BodyText = () => {
             },
             '-=0.7'
           );
-          // console.log('It works!');
         }
       },
       {
