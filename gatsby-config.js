@@ -2,7 +2,17 @@ module.exports = {
   siteMetadata: {
     title: `Pol Milian | Senior Front-End Engineer`,
     description: `Hi! I'm Pol, a Senior Front-End Engineer from Barcelona. I specialize in modern JavaScript (ES6+) frameworks such as React and VueJS to make fast, good and beautiful websites and web-apps.`,
-    author: `@E_L_Pol`,
+    author: `Pol Milian`,
+    social: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/E_L_Pol`,
+      },
+      {
+        name: `GitHub`,
+        url: `https://github.com/Polcius`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +21,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/blog`,
       },
     },
     {
